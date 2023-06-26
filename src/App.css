@@ -6,7 +6,105 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  background-color: #f0f0f0;
+}
 
+.quote-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  animation: quote-container-animation 0.5s ease-in-out;
+  text-align: center;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #333;
+  animation: quote-animation 0.5s ease-in-out;
+}
+
+.anime-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  animation: anime-name-animation 0.5s ease-in-out;
+}
+
+.character {
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
+  animation: character-animation 0.5s ease-in-out;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: button-animation 0.5s ease-in-out;
+}
+
+.flip-up {
+  animation: flip-up 0.5s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+@keyframes quote-container-animation {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes quote-animation {
+  0% {
+    color: #ccc;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+@keyframes anime-name-animation {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes character-animation {
+  0% {
+    color: #999;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
